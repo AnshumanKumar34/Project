@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Code Editor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Online Code Editor</h1>
+
+        <div class="tabs">
+            <button class="tab-btn active" onclick="openTab(event, 'htmlTab')">HTML</button>
+            <button class="tab-btn" onclick="openTab(event, 'cssTab')">CSS</button>
+            <button class="tab-btn" onclick="openTab(event, 'jsTab')">JavaScript</button>
+        </div>
+
+        <div class="editor">
+            <textarea id="htmlTab" class="tab-content active" placeholder="Write HTML here..."></textarea>
+            <textarea id="cssTab" class="tab-content" placeholder="Write CSS here..."></textarea>
+            <textarea id="jsTab" class="tab-content" placeholder="Write JavaScript here..."></textarea>
+        </div>
+
+        <div class="buttons">
+            <button onclick="runCode()">Run Code</button>
+            <button onclick="clearCode()">Clear</button>
+            <button onclick="downloadCode()">Download</button>
+        </div>
+
+        <h2>Live Preview</h2>
+        <iframe id="output"></iframe>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

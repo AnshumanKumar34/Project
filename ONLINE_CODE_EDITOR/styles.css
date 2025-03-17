@@ -1,0 +1,93 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    color: black;
+}
+
+/* Tabs */
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.tab-btn {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.tab-btn.active {
+    background: #0056b3;
+}
+
+/* Editor */
+.editor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tab-content {
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: monospace;
+    display: none;
+    outline: none;
+    resize: vertical;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Buttons */
+.buttons {
+    margin: 20px 0;
+}
+
+.buttons button {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.buttons button:hover {
+    background: #218838;
+}
+
+/* Output Preview */
+iframe {
+    width: 100%;
+    height: 300px;
+    border: 1px solid #ddd;
+    background: white;
+    border-radius: 5px;
+}
