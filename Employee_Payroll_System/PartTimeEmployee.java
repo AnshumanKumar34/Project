@@ -1,4 +1,4 @@
-package Employee_Payrool_System;
+package Employee_Payroll_System;
 
 public class PartTimeEmployee extends Employee {
     private int hoursWorked;
