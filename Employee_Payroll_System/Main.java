@@ -1,4 +1,4 @@
-package Employee_Payrool_System;
+package Employee_Payroll_System;
 
 public class Main {
     public static void main(String[] args) {
